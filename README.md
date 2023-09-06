@@ -1,2 +1,5 @@
 # odonto-landing-page
-Landing page para a Monguilhott Clínica Odontológica
+
+Página incompleta, irei terminar.
+
+Deploy -> https://helderjuann.github.io/odonto-landing-page/
