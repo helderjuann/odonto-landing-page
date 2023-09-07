@@ -32,6 +32,18 @@ html, body {
     width: 100%;
 }
 
+.wrap-wrap {
+    flex-wrap: wrap;
+}
+
+.wrap-single {
+    width: 33.3%;
+}
+
+.revs {
+    transform: scaleX(-1);
+}
+
 section.header-fill {
     width: 100%;
     padding: 30px 0;
@@ -79,6 +91,38 @@ nav.menu-desktop li {
 nav.menu-desktop a {
     color: inherit;
     text-decoration: none;
+}
+
+header .menu-mobile {
+    display: none;
+    float: right;
+}
+
+header .menu-mobile p {
+    font-size: 40px;
+    color: #fff;
+    position: relative;
+    right: 80px;
+    bottom: 65px;
+    cursor: pointer;
+}
+
+header .menu-mobile ul {
+    display: none;
+    background-color: rgba(80, 157, 135, 0.8);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100px;
+    list-style-type: none;
+    text-align: center;
+}
+
+header .menu-mobile ul li a {
+    padding: 8px 0;
+    text-decoration: none;
+    color: white;
+    display: block;
 }
 
 header .phone-header {
@@ -136,8 +180,8 @@ section.header-fill .flex-wrap {
     outline: 0;
 }
 
-.form-wrapper a {
-    width: 60%;
+.submit-btn {
+    width: 100%;
     color: white;
     padding: 13px;
     cursor: pointer;
@@ -193,12 +237,343 @@ section.header-fill .flex-wrap {
     top: 20px;
 }
 
+.wrap-single {
+    padding: 0 10px;
+}
+
+.wrap-single .icon {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.wrap-single .icon img {
+    max-width: 200px;
+    height: 60px;
+}
+
+.wrap-single h2 {
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #509d87;
+}
+
+section.banner-about > .container {
+    padding: 50px 0;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.banner-about .banner-img {
+    float: left;
+    width: 50%;
+}
+
+.banner-about .banner-img img {
+    max-width: 100%;
+    height: 380px;
+}
+
+.banner-about .banner-content {
+    float: left;
+    width: 50%;
+    padding: 0 60px;
+    max-width: 500px;
+}
+
+.banner-content .single-text h2 {
+    color: #509d87;
+    font-weight: 400;
+}
+
+.banner-content .single-text :where(h2, b, p) {
+    margin: 10px 0;
+}
+
+section.statement-fill {
+    width: 100%;
+    background-image: url(../assets/bg_02.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    z-index: 2;
+    position: relative;
+    top: -100px;
+    margin-bottom: -100px;
+}
+
+.statement-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #4b4b4b;
+}
+
+.statement-text p {
+    margin-top: 20px;
+}
+
+.statement-text h2 {
+    font-weight: 300;
+}
+
+.statement-text i {
+    margin: 0 10px;
+}
+
+section.treatments-wrapper > .container {
+    padding: 50px 0;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.treatments-wrapper h2 {
+    color: #509d87;
+    font-weight: 400;
+    text-align: center;
+}
+
+.review-img {
+    float: left;
+    width: 50%;
+    padding: 0 5%;
+    position: relative;
+    top: 70px;
+}
+
+.review {
+    display: flex;
+    justify-content: left;
+}
+
+.review p {
+    position: relative;
+    top: 70px;
+    margin: 0 20px;
+    color: #509d87;
+}
+
+.stages {
+    width: 50%;
+    float: left;
+}
+
+.groups {
+    margin-top: 40px;
+    position: relative;
+    right: 40px;
+}
+
+.groups .circle {
+	width: 80px;
+	height: 80px;
+	float: left;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+	position: relative;
+}
+
+.circle span {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform:translate(-50%,-50%);
+    color: #509d87;
+    font-size: 30px;
+}
+
+.line {
+	position: absolute;
+	top: 79px;
+	left: 50%;
+	z-index: 2;
+	transform:translate(-50%,0);
+	height: 40px;
+	width: 1px;
+	background: black;
+}
+
+.stages-desc {
+	float: left;
+	width: calc(100% - 100px);
+	padding:0 20px;
+}
+
+.stages-desc h3 {
+	color: #509d87;
+	font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.stages-desc p {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+section.positive-points > .container {
+    padding: 50px 0;
+    max-width: 500px;
+    width: 100%;
+}
+
+.positive-points h2 {
+    color: #509d87;
+    font-weight: 400;
+    text-align: center;
+}
+
+.versus-menu {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.versus-menu :where(p) {
+    font-size: 17px;
+}
+
+.traditional {
+    float: left;
+    width: 50%;
+    border-right: 1px solid #ccc;
+}
+
+.traditional h2 {
+    margin-bottom: 28px;
+}
+
+.traditional p {
+    color: #7c7c7c;
+    margin: 10px 0;
+}
+
+.invisalign p {
+    color: #509d87;
+    margin: 20px 0;
+}
+
+.invisalign {
+    float: left;
+    width: 50%;
+    border-left: 1px solid #ccc;
+}
+
+.invisalign img {
+    width: 100%;
+    max-width: 130px;
+}
+
+.red-line {
+    width: 100%;
+    max-width: 170px;
+    border: 1px solid #f34d4d;
+    position: relative;
+    top: -20px;
+    margin: 0 auto;
+    transform: rotate(-2deg);
+}
+
+section.contact {
+    width: 100%;
+    background-color: #c6f5e7;
+    padding: 50px 0;
+}
+
+section.contact h2 {
+    text-align: center;
+    color: #509d87;
+    margin-bottom: 60px;
+}
+
+.profile-img {
+    width: 50%;
+    float: left;
+    position: relative;
+    top: 50px;
+}
+
+.contact-form {
+    width: 50%;
+    float: left;
+}
+
+.worker-img {
+    width: 100%;
+    padding-top: 250px;
+    max-width: 250px;
+    border-radius: 50%;
+    border: 6px solid #7c7c7c;
+    margin: 0 auto 20px auto;
+    background-image: url(../assets/dra.png);
+    background-position: right -25px top -3px;
+}
+
+.profile-img p {
+    color: #509d87;
+    text-align: center;
+}
+
+.contact-form p {
+    color: #509d87;
+    margin-bottom: 20px;
+}
+
+.contact-form input {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 40px;
+    border: 2px solid #ccc;
+    padding: 14px;
+    margin: 8px 0;
+}
+
+.contact-form input:focus {
+    outline: 0;
+}
+
+.contact-form a {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    display: block;
+    max-width: 400px;
+    color: white;
+    padding: 13px;
+    cursor: pointer;
+    background-color: lightseagreen;
+    border: 2px solid lightseagreen;
+    border-radius: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contact-form a > b {
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    background-color: #509d87;
+    padding: 30px 0;
+}
+
+footer img {
+    width: 166px;
+    height: 64px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media screen and (max-width: 860px) {
     .header-fill header .logo {
         float: none;
         margin-right: auto;
         margin-left: auto;
         display: block;
+        margin: 0 auto -40px auto;
     }
 
     .menu-desktop {
@@ -209,8 +584,20 @@ section.header-fill .flex-wrap {
         display: none;
     }
 
-    .menu-mobile {
+    nav.menu-mobile {
         display: block;
+    }
+
+    header .menu-mobile p {
+        font-size: 40px;
+        color: #fff;
+        position: relative;
+        right: 10px;
+        top: 2px;
+    }
+
+    header .menu-mobile ul {
+        top: 125px;
     }
 
     .w50 {
@@ -251,6 +638,119 @@ section.header-fill .flex-wrap {
     .img-wrapper .two-img {
         height: 150px;
     }
+
+    .wrap-single {
+        width: 100%;
+    }
+
+    .wrap-single :where(h2, b, p) {
+        text-align: center;
+    }
+
+    .banner-about .banner-img {
+        float: none;
+        width: 100%;
+    }
+    
+    .banner-about .banner-img img {
+        max-width: 100%;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        position: relative;
+        right: 55px;
+    }
+    
+    .banner-about .banner-content {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .banner-content .single-text :where(h2, b, p) {
+        text-align: center;
+    }
+
+    section.statement-fill {
+        position: relative;
+        top: 0;
+        margin-bottom: 0;
+    }
+
+    .review-img {
+        display: none;
+    }
+
+    .stages {
+        width: 100%;
+        float: none;
+    }
+
+    .groups {
+        margin-top: 40px;
+        position: relative;
+        right: 0;
+        left: 0;
+    }
+    
+    .groups .circle {
+        float: none;
+        position: relative;
+        margin: 20px auto;
+    }
+    
+    .line {
+        display: none;
+    }
+    
+    .stages-desc {
+        float: none;
+        width: 100%;
+    }
+
+    .profile-img {
+        width: 100%;
+        float: none;
+        position: relative;
+        top: 0;
+    }
+    
+    .contact-form {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .contact-form a {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .traditional {
+        float: none;
+        width: 100%;
+        border: 0;
+        margin-bottom: 30px;
+    }
+    
+    .invisalign {
+        float: none;
+        width: 100%;
+        border: 0;
+        margin-top: 30px;
+    }
+
+    header .menu-mobile p {
+        position: relative;
+        right: 10px;
+        bottom: 30px;
+    }
+
+    header .menu-mobile ul {
+        top: 125px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -258,17 +758,48 @@ section.header-fill .flex-wrap {
         background-size: contain;
     }
 
-    .two, .four {
-        margin-top: 20px;
+    .form-wrapper {
+        display: inline-block;
+        margin: 30px 0;
+    }
+
+    .form-wrapper input {
+        display: inline-block;
+        width: 100%;
+        max-width: 500px;
+        padding: 13px;
+    }
+    
+    .form-wrapper input:focus {
+        outline: 0;
+    }
+    
+    .form-wrapper a {
+        margin: 20px 0;
+        width: 100%;
+        display: inline-block;
     }
 
     .round-img .img-wrapper {
-        width: 100%;
-        display: inline-block;
-        margin: 50px 0;
+        display: none;
+    }
+
+    .banner-about .banner-img {
+        border-bottom: 3px solid #509d87;
+    }
+
+    .banner-about .banner-img img {
+        display: none;
+    }
+
+    section.statement-fill {
+        position: relative;
+        top: 0;
+        margin-bottom: 0;
     }
     
-    .img-wrapper .two-img {
-        height: 150px;
+    .statement-text {
+        position: relative;
+        top: 160px;
     }
 }
