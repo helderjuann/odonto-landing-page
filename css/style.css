@@ -66,11 +66,9 @@ header div.logo {
     background-size: 100% 100%;
     position: relative;
     top: -20px;
+    cursor: pointer;
 }
 
-nav.menu-mobile {
-    display: none;
-}
 
 nav.menu-desktop {
     float: left;
@@ -91,6 +89,27 @@ nav.menu-desktop li {
 nav.menu-desktop a {
     color: inherit;
     text-decoration: none;
+    transition: 250ms ease-in;
+}
+
+nav.menu-desktop ul li a:hover {
+    color: #509d87;
+}
+
+nav.menu-desktop ul li a:after {
+    display: block;
+    content: '';
+    border-bottom: 1px solid #509d87;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in;
+}
+
+nav.menu-desktop ul li a:hover:after {
+    transform: scale(1);
+}
+
+nav.menu-mobile {
+    display: none;
 }
 
 header .menu-mobile {
@@ -147,7 +166,7 @@ section.header-fill .flex-wrap {
 }
 
 .main-text h2,
-.main-texr p {
+.main-text p {
     padding: 0 2%;
 }
 
@@ -159,6 +178,7 @@ section.header-fill .flex-wrap {
 
 .main-text p {
     margin-top: 25px;
+    color: #4b4b4b;
 }
 
 .form-wrapper {
@@ -189,6 +209,12 @@ section.header-fill .flex-wrap {
     border: 2px solid lightseagreen;
     border-radius: 40px;
     text-align: center;
+    transition: 250ms ease-in;
+}
+
+.submit-btn:hover {
+    background-color: white;
+    color: lightseagreen;
 }
 
 .main-text span {
@@ -258,6 +284,10 @@ section.header-fill .flex-wrap {
     color: #509d87;
 }
 
+.wrap-single p {
+    color: #4b4b4b;
+}
+
 section.banner-about > .container {
     padding: 50px 0;
     max-width: 1440px;
@@ -286,8 +316,13 @@ section.banner-about > .container {
     font-weight: 400;
 }
 
+.banner-content .single-text b {
+    color: #509d87;
+}
+
 .banner-content .single-text :where(h2, b, p) {
     margin: 10px 0;
+    color: #4b4b4b;
 }
 
 section.statement-fill {
@@ -313,6 +348,7 @@ section.statement-fill {
 
 .statement-text p {
     margin-top: 20px;
+    color: #4b4b4b;
 }
 
 .statement-text h2 {
@@ -358,6 +394,10 @@ section.treatments-wrapper > .container {
 .stages {
     width: 50%;
     float: left;
+}
+
+.stages p {
+    color: #4b4b4b;
 }
 
 .groups {
@@ -546,6 +586,12 @@ section.contact h2 {
     border-radius: 40px;
     text-align: center;
     text-decoration: none;
+    transition: 250ms ease-in;
+}
+
+.contact-form a:hover {
+    background-color: white;
+    color: lightseagreen;
 }
 
 .contact-form a > b {
@@ -759,14 +805,14 @@ footer img {
     }
 
     .form-wrapper {
-        display: inline-block;
+        display: block;
         margin: 30px 0;
     }
 
     .form-wrapper input {
-        display: inline-block;
+        display: block;
         width: 100%;
-        max-width: 500px;
+        max-width: 600px !important;
         padding: 13px;
     }
     
