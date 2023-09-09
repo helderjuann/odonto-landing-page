@@ -9,6 +9,12 @@ html, body {
     height: 100%;
 }
 
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 0;
+}
+
 .clear {
     clear: both;
 }
@@ -194,10 +200,6 @@ section.header-fill .flex-wrap {
     border-radius: 40px;
     border: 2px solid #ccc;
     padding: 13px;
-}
-
-.form-wrapper input[type=email]:focus {
-    outline: 0;
 }
 
 .submit-btn {
@@ -568,10 +570,6 @@ section.contact h2 {
     margin: 8px 0;
 }
 
-.contact-form input:focus {
-    outline: 0;
-}
-
 .contact-form a {
     position: relative;
     top: 20px;
@@ -814,10 +812,6 @@ footer img {
         width: 100%;
         max-width: 600px !important;
         padding: 13px;
-    }
-    
-    .form-wrapper input:focus {
-        outline: 0;
     }
     
     .form-wrapper a {
