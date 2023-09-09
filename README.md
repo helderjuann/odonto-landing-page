@@ -1,7 +1,7 @@
 # odonto-landing-page
 
-To do: Fazer as animações e hovers/placeholders que eu esqueci
+Front-end completo. Pode ser que eu altere algo depois.
 
-Página incompleta, irei terminar.
-
+Validar o formulário depois. Vou usar JavaScript ou PHP.
+  
 Deploy -> https://helderjuann.github.io/odonto-landing-page/
