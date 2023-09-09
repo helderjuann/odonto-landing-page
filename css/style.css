@@ -10,8 +10,7 @@ html, body {
 }
 
 input:focus,
-select:focus,
-textarea:focus {
+select:focus {
     outline: 0;
 }
 
